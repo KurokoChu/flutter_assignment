@@ -136,7 +136,7 @@ class LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(left: 230.0, top:20.0),
+              margin: const EdgeInsets.only(left: 230.0, top: 20.0),
               child: Row(
                 children: <Widget>[
                   InkWell(
