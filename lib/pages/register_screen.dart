@@ -8,18 +8,16 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class RegisterScreenState extends State<RegisterScreen> {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
 
-  String _username = "", _password = "", _confirmpassword = "";
+  String _username = '', _password = '', _confirmpassword = '';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      key: _scaffoldKey,
       appBar: AppBar(
-        title: new Text("RREGISTER"),
+        title: new Text('RREGISTER'),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -156,12 +154,12 @@ class RegisterScreenState extends State<RegisterScreen> {
                                   );
                                 });
                           } else {
-                            Navigator.pushNamed(context, "/login");
+                            Navigator.pushNamed(context, '/login');
                           }
                         }
                       },
                       child: Text(
-                        "CONTINUE",
+                        'CONTINUE',
                         style: TextStyle(color: Colors.white),
                       ),
                       color: Colors.blue,

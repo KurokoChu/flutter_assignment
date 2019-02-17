@@ -26,31 +26,31 @@ class MainScreen extends StatelessWidget {
           children: <Widget>[
             Center(
                 child: Text(
-              "Home",
+              'Home',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36.0),
             )),
             Center(
                 child: Text(
-              "Notify",
+              'Notify',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36.0),
             )),
             Center(
                 child: Text(
-              "Map",
+              'Map',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36.0),
             )),
             Center(
                 child: Text(
-              "Profile",
+              'Profile',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36.0),
             )),
             Center(
                 child: Text(
-              "Setup",
+              'Setup',
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36.0),
             )),

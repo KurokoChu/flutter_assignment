@@ -8,7 +8,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class LoginScreenState extends State<LoginScreen> {
-  final _scaffoldKey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
 
   String _username, _password;
@@ -16,7 +15,6 @@ class LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _scaffoldKey,
       resizeToAvoidBottomPadding: false,
       body: Container(
         child: Column(
@@ -111,8 +109,8 @@ class LoginScreenState extends State<LoginScreen> {
                           child: RaisedButton(
                             onPressed: () {
                               if (_formKey.currentState.validate()) {
-                                if (_username == "admin" &&
-                                    _password == "admin") {
+                                if (_username == 'admin' &&
+                                    _password == 'admin') {
                                   showDialog(
                                       context: context,
                                       builder: (BuildContext context) {
@@ -122,12 +120,12 @@ class LoginScreenState extends State<LoginScreen> {
                                         );
                                       });
                                 } else {
-                                  Navigator.pushNamed(context, "/main");
+                                  Navigator.pushNamed(context, '/main');
                                 }
                               }
                             },
                             child: Text(
-                              "LOGIN",
+                              'LOGIN',
                             ),
                           ),
                         ),
@@ -138,22 +136,20 @@ class LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(left: 200.0, right: 40.0),
+              margin: const EdgeInsets.only(left: 230.0, top:20.0),
               child: Row(
                 children: <Widget>[
-                  Expanded(
-                    child: FlatButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, "/register");
-                      },
+                  InkWell(
                       child: Text(
-                        "Register New Account",
+                        'Register New Account',
                         style: TextStyle(
                           color: Colors.blueAccent,
+                          decoration: TextDecoration.underline,
                         ),
                       ),
-                    ),
-                  ),
+                      onTap: () {
+                        Navigator.pushNamed(context, '/register');
+                      }),
                 ],
               ),
             ),
